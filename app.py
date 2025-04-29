@@ -43,9 +43,9 @@ st.markdown("<div class='title'>PowerTech Motor</div>", unsafe_allow_html=True)
 st.markdown("<div class='subtitle'>Control de Mantenimiento</div>", unsafe_allow_html=True)
 st.markdown("<div class='signature'>Ing. Ronny Calva</div>", unsafe_allow_html=True)
 
-# Conexión a Google Sheets
-sheet_url = 'https://docs.google.com/spreadsheets/d/1Fmwe1G9mM6WQlRb4QIHq4FIoZYl2Jm3-/edit#gid=0'
-csv_export_url = sheet_url.replace('/edit#gid=', '/export?format=csv&gid=')
+# Conexión a Google Sheets (con link corregido)
+sheet_url = 'https://docs.google.com/spreadsheets/d/1Fmwe1G9mM6WQlRb4QIHq4FIoZYl2Jm3-/edit?usp=sharing'
+csv_export_url = sheet_url.replace('/edit?usp=sharing', '/export?format=csv')
 df = pd.read_csv(csv_export_url)
 
 # Menú de opciones
